@@ -113,15 +113,7 @@ func part2_unique(robots []Robot, maxX, maxY int) {
 		positions = calcRobotPositions(robots, maxX, maxY, i)
 
 		// It turns out that all of the robots are in unique positions at the target iteration, so we can just check for that
-		unique := true
-		for _, count := range positions {
-			if count > 1 {
-				unique = false
-				break
-			}
-		}
-
-		if unique {
+		if len(positions) == len(robots) {
 			iteration = i
 			break
 		}
