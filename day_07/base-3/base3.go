@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func base3() {
+func main() {
 	var inputLines []string
 	scanner := bufio.NewScanner(os.Stdin)
 
@@ -117,7 +117,7 @@ func part2(inputLines []string) int {
 				}
 
 				if result == targetValue {
-					display(targetValue, values, addMul, concat, result)
+					// display(targetValue, values, addMul, concat, result)
 					part2Total += targetValue
 					matched = true
 					break
