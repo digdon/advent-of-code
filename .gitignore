@@ -4,4 +4,5 @@
 .classpath
 .project
 .settings/
-**/puzzle_input.txt
+.vscode/launch.json
+**/input.txt
